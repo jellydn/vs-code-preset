@@ -1,0 +1,13 @@
+{
+  "name": "vs-code-preset",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/jellydn/vs-code-preset.git",
+  "author": "Huynh Duc Dung <dung@aircarbon.co>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "deno run --watch --unstable --allow-read --allow-net --allow-write --allow-run cli/index.ts",
+    "build": "cd cli && deno compile --unstable --allow-read --allow-env --allow-write --allow-run --allow-net index.ts",
+    "test": "deno test -A -r"
+  }
+}
